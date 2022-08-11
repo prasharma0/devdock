@@ -1,0 +1,37 @@
+1. 200  (Success/OK)
+The status code 200 represents success which means the page you have requested has been fetched. The action made has been accepted and has been delivered to the client by delivering the requested page. 
+
+GET: entity in reference to the requested source sent to the response
+POST: entity describing the response of action made
+HEAD: an entity-header field similar to the requested source 
+TRACE: a request made by the client is taken care of by the server
+
+2. 301 (Permanent Redirect)
+The HTTP status code 301 means that the page you have requested has moved to a new URL and which is permanent. In the future, whenever the user requests the same website, it will be redirected to the new URL. The modified permanent URL is given by the location filed in response. 
+
+3. 302 (Temporary Redirect)
+The requested URL has been redirected to another website which is temporary. Major changes in the URL will be in the future. Other than GET or HEAD, if the 302 is received in response to a request. The redirection is temporarily redirected to another website. 
+
+4. 304 (Not Modified)
+Status code 304 is used for caching purposes. The response has not been changed so that in the future the client can resume the same cache. If there’s a GET request and access is allowed, but the document has not been modified. The response MUST NOT contain a message-body and therefore comes to an end by the first empty line. 
+
+5. 404 (Bad Request)
+When the client requests a page and the server is not able to understand anything, it displays a 400 status code. The client SHOULD NOT repeat the request without any changes. The request can be a malformed, deceptive request routing, or invalid request.
+
+6. 401 (Unauthorized Error)
+This status code requires user authentication. The response includes the WWW-Authenticate header field containing a challenge applied to a requested source. HTTP access authentication “HTTP Authentication: Basic and Digest Access Authentication”.
+
+7. 403 (Forbidden)
+The status code 403 implies that the request is understood by the server, but still refuses to fulfill it. If the request method was not HEAD and also the server wants to make it public when the request is not completed, it SHOULD tell the reason for the refusal in the entity. 
+
+8. 404 (Not Found)
+404 status code appears when you request a URL and then the server has not found anything. This happens when the server doesn’t wish to describe the reason why the request has been refused. Also, the server is not able to find a representation for the target resource. 
+
+9. 500 (Internal Server Error)
+500 status code means requesting a URL is not fulfilled because the server encounters an unexpected condition. It gives information about the request made if it is successful, and throws an error. When there’s an error during a connection to the server, and the requested page cannot be accessed then this message is displayed. 
+
+10. 501 (Not Implemented)
+When a request is made by the client, the server is not able to recognize the request method and is not able to support any resource. By default. it is cacheable. The methods, the server requires to support are GET and HEAD. The server does not support the functionality required to fulfill the request.
+
+11. 201 (Created):
+The HTTP 201 Created success status response code indicates that the request has succeeded and has led to the creation of a resource. The new resource is effectively created before this response is sent back and the new resource is returned in the body of the message, its location being either the URL of the request, or the content of the Location header.

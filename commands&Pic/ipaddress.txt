@@ -1,0 +1,15 @@
+Find network id and Broadcast for 150.10.20.30 .
+
+
+=> Here, the ip address is 150.10.20.30 so, we first have to analyse which ip class does it belongs and,
+
+this belongs to CLASS B ip address. Then, we have to figure out the respective classes of its SubNet and
+
+this Class B have a subnet of 255.255.0.0. Therefore, it do have 2 network bits and 2 host bits.
+
+So, we can conclude that its NETWORK address must be 150.10.0.0 whereas the BROADCAST address must be calculated
+from Right to Left pattern, i.e, 150.10.255.255
+
+Also to calculate the total possible number of hosts in this network, we can do as 256*256 - 2 = 65534.
+
+Here, I have subtracted the network address and the broadcast address above. Thus, 65534 host can be only used on that network.

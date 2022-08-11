@@ -1,0 +1,2 @@
+Ec2 launch -> ssh user@ip -> apt insall <webserver>
+(Note: my aws console is not working from yesterday, I have consulted to Jayanta Ghimire bro, but still hasnot been resolved.)
